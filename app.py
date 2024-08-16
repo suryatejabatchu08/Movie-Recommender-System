@@ -2,9 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
-#import streamlit.components.v1
 def fetch_poster(movie_id):
-    #https://api.themoviedb.org/3/movie/{}?api_key=c90938ccd0336ff580db036bf5f734c28&language=en-US".format(movie_id)
     url = "https://api.themoviedb.org/3/movie/{}?api_key=c90938ccd0336ff580db036bf5f734c2".format(movie_id)
     data = requests.get(url)
     data = data.json()
